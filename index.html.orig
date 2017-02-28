@@ -52,9 +52,16 @@
 											<h2>Concept</h2>
 										</header>
 										<p>StreamFi is a liquid level sensor that is attached to the outside of any container holding liquid. StreamFi determines if the fill level is close to empty or full and notifies the sensor owner. The sensor and notifier will be self-contained and self-powered. Ideal applications of StreamFi are water containers at sports events or restaurants, kegs at stadiums or other large events such as music festivals, brake or wiper fluid in cars, and propane tanks. In addition to determining an empty condition, StreamFi could be used to check the full condition, for example the fill level of rain gauges or other reservoirs. Notification will be done through an application that allows the user to easily determine which sensor is nearing its critical condition. In addition, the sensor will notify the user when the sensor runs low on power.  StreamFi could also reduce inventory costs for companies that store large quantities of liquid containers by allowing them to place orders only when exactly needed.</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
 									</div>
+<<<<<<< HEAD
+									<span class="image"><img src="images/selin.jpg" alt="" /></span>
+=======
 									<span class="image"><img src="images/gatorade_jug.jpg" alt="" /></span>
-							</div>
+>>>>>>> bc39c51f6c8fa8b13e01bc3cc7b60bb344c44c8f
+								</div>
 							</section>
 
 						<!-- First Section -->
@@ -67,7 +74,6 @@
 										<span class="icon major style1 fa-coffee"></span>
 										<h3>Monitoring Opaque Beverage Containers</h3>
 										<p>It can be very difficult to determine how much liquid is remaining in an opaque beverage container. People often have to resort to tilting the container until no more liquid comes out, or lifting the container up to estimate its weight. With StreamFi, we hope to provide an effective means of monitoring liquid contents in a large beverage container so that people no longer have to guess when they need to refill the container.</p>
-
 									</li>
 									<li>
 										<span class="icon major style3 fa-line-chart"></span>
@@ -148,46 +154,26 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="image"><img src="images/transducer.png" alt="" /></span>
-										<h3>COM-10917 Medium Surface Transducer</h3>
-										<p>The transducer will be responsible for applying sweeping frequencies across the container.  These vibrations can be read by the piezoelectric sensor.</p>
+										<span class="icon major style1 fa-code"></span>
+										<h3>Ipsum consequat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<span class="image"><img src="images/amp.png" alt="" /></span>
-										<h3>MAX98306 Audio Amplifier</h3>
-										<p>In order to ensure that the transducer's sounds are loud enough to be read by the piezo sensor, our team will use an audio amplifier.</p>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Amed sed feugiat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<span class="image"><img src="images/piezo.png" alt="" /></span>
-										<h3>SEN-10293 Piezoelectric sensor</h3>
-										<p>The vibration sensor will read back the sounds played by the transducer subsystem.  As shown in <a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">other projects</a>, an object will play these vibrations differently when it is touched or not touched; our team believes this principle can be applied to  containers with fluids inside of them.  The containers will play the vibrations differently when they are full, when they are empty, and when they are at different levels in between.  The piezoelectric sensor will sense these vibrations and transmit them to the controller of the system, to be processed and translated into meaning.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/wifiModule.png" alt=""/></span>
-										<h3>ESP8266 WiFi Module</h3>
-										<p>Our team will use WiFi to transmit data from the mounted system to AFS for data storage and computation.  While many communication technologies would work for this data transmission, WiFi is one of the easiest for our team to use, and will be readily available in many of the use cases of the product.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/battery.png" alt=""/></span>
-										<h3>PRT-13854 Lithium Ion Battery</h3>
-										<p>The battery must last for long periods of time, to minimize the inconvenience of recharging the subsystem.  In particular, the device must be powered for at least a full day at a time.  The battery should be rechargeable, which is why we opted for a lithium ion batter.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/charger.png" alt=""/></span>
-										<h3>PRT-10217 Charging Circuit</h3>
-										<p>Our team will use a PRT-10217 charging circuit to recharge the battery of the mounted component.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/rpi.jpg" alt=""/></span>
-										<h3>Raspberry Pi 3</h3>
-										<p>Our team plans to start with a Raspberry Pi 3 as the central control unit for the mounted system.  Using a ready-made Raspberry Pi will save time and effort on a custom-made PCB, allowing our team to rapidly prototype and develop the rest of the system.</p>
+										<span class="icon major style5 fa-diamond"></span>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 								</ul>
-								<!--<footer class="major">
+								<footer class="major">
 									<ul class="actions">
-										<li><a href="systemDiagram.html" class="button">See How They Go Together</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
-								</footer>-->
+								</footer>
 							</section>
 
 						<!-- Team Members --> 
