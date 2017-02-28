@@ -56,8 +56,12 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
+<<<<<<< HEAD
+									<span class="image"><img src="images/selin.jpg" alt="" /></span>
+=======
 									<span class="image"><img src="images/gatorade_jug.jpg" alt="" /></span>
-							</div>
+>>>>>>> bc39c51f6c8fa8b13e01bc3cc7b60bb344c44c8f
+								</div>
 							</section>
 
 						<!-- First Section -->
@@ -70,7 +74,6 @@
 										<span class="icon major style1 fa-coffee"></span>
 										<h3>Monitoring Opaque Beverage Containers</h3>
 										<p>It can be very difficult to determine how much liquid is remaining in an opaque beverage container. People often have to resort to tilting the container until no more liquid comes out, or lifting the container up to estimate its weight. With StreamFi, we hope to provide an effective means of monitoring liquid contents in a large beverage container so that people no longer have to guess when they need to refill the container.</p>
-
 									</li>
 									<li>
 										<span class="icon major style3 fa-line-chart"></span>
