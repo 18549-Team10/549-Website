@@ -2387,6 +2387,10 @@
 			color: white;
 		}
 
+		.icon.style7 {
+			color: black;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
