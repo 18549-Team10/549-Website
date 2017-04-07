@@ -36,6 +36,7 @@
 							<li><a href="#second">Competitors</a></li>
 							<li><a href="#requirements">Requirements</a></li>
 							<li><a href="#components">Components</a></li>
+							<!-- <li><a href="#architecture">Architecture</a></li> -->
 							<li><a href="#team-members">Team Members</a></li>
 							<li><a href="#documentation">Documentation</a></li>
 						</ul>
@@ -146,7 +147,7 @@
 								<header class="major">
 									<h2>Components</h2>
 								</header>
-								<p>At a high level, the system will make small vibrations in an object, and then read back these vibrations.  As shown in <a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">other projects</a>, an object will play these vibrations differently when it is touched or not touched; our team believes this principle can be applied to containers with fluids inside of them.  The containers will play the vibrations differently when they are full, when they are empty, and when they are at different levels in between.  Our system will make the vibrations, read them, send them to a signal processing unit to determine fill level of the container, and notify users when the container is almost empty.  The components necessary to accomplish this task are shown below.</p>
+								<p>At a high level, the system will make small vibrations in an object, and then read back these vibrations.  As shown in <a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">other projects</a>, an object will play these vibrations differently when it is touched or not touched; our team believes this principle can be applied to containers with fluids inside of them.  The containers will play the vibrations differently when they are full, when they are empty, and when they are at different levels in between.  Our system will make the vibrations, read them, send them to a signal processing unit to determine fill level of the container, and notify users when the container is almost empty.  The components necessary to accomplish this task are shown below.  See how they all fit together <a href="systemDiagram.html">here</a>.</p>
 								<ul class="features">
 									<li>
 										<span class="image"><img src="images/transducer.png" alt="" /></span>
@@ -156,7 +157,7 @@
 									<li>
 										<span class="image"><img src="images/lm386.png" alt="" /></span>
 										<h3>LM386 Audio Amplifier Module</h3>
-										<p>In order to ensure that the transducer's sounds are loud enough to be read by the piezo sensor, our team is using this audio amplifier.</p>
+										<p>While prototyping with the Raspberry pi, our team is using this audio amplifier to ensure that the transducer's sounds are loud enough to be read by the piezo sensor.</p>
 									</li>
 									<li>
 										<span class="image"><img src="images/piezo.jpg" alt="" /></span>
@@ -194,12 +195,20 @@
 										<p>Our team plans to use a PRT-10217 charging circuit to recharge the battery of the mounted component.</p>
 									</li>
 								</ul>
-								<!--<footer class="major">
-									<ul class="actions">
-										<li><a href="systemDiagram.html" class="button">See How They Go Together</a></li>
-									</ul>
-								</footer>-->
 							</section>
+
+							<!-- <section id="architecture" class="main special">
+								<header class="major">
+									<h2>Architecture</h2>
+									<ul class="features">
+										<li>
+											<span class="image"><img src="images/systemdiagram.png" alt=""/></span>
+											<h3>Planned System Architecture</h3>
+											<p>View our prototyping system architecture <a href="systemDiagram.html">here</a>.</p>
+										</li>
+									</ul>
+								</header>
+							</section> -->
 
 						<!-- Team Members --> 
 							<section id="team-members" class="main special">
