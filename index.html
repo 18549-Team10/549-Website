@@ -36,6 +36,7 @@
 							<li><a href="#second">Competitors</a></li>
 							<li><a href="#requirements">Requirements</a></li>
 							<li><a href="#components">Components</a></li>
+							<!-- <li><a href="#architecture">Architecture</a></li> -->
 							<li><a href="#team-members">Team Members</a></li>
 							<li><a href="#documentation">Documentation</a></li>
 						</ul>
@@ -146,51 +147,68 @@
 								<header class="major">
 									<h2>Components</h2>
 								</header>
-								<p>At a high level, the system will make small vibrations in an object, and then read back these vibrations.  As shown in <a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">other projects</a>, an object will play these vibrations differently when it is touched or not touched; our team believes this principle can be applied to containers with fluids inside of them.  The containers will play the vibrations differently when they are full, when they are empty, and when they are at different levels in between.  Our system will make the vibrations, read them, send them to a signal processing unit to determine fill level of the container, and notify users when the container is almost empty.  The components necessary to accomplish this task are shown below.</p>
+								<p>At a high level, the system will make small vibrations in an object, and then read back these vibrations.  As shown in <a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">other projects</a>, an object will play these vibrations differently when it is touched or not touched; our team believes this principle can be applied to containers with fluids inside of them.  The containers will play the vibrations differently when they are full, when they are empty, and when they are at different levels in between.  Our system will make the vibrations, read them, send them to a signal processing unit to determine fill level of the container, and notify users when the container is almost empty.  The components necessary to accomplish this task are shown below.  See how they all fit together <a href="systemDiagram.html">here</a>.</p>
 								<ul class="features">
 									<li>
-										<span class="image"><img src="images/transducer.jpg" alt="" /></span>
-										<h3>COM-10917 Medium Surface Transducer</h3>
-										<p>The transducer will be responsible for applying sweeping frequencies across the container.  These vibrations can be read by the piezoelectric sensor.</p>
+										<span class="image"><img src="images/transducer.png" alt="" /></span>
+										<h3>Medium Surface Transducer</h3>
+										<p>The transducer is be responsible for sweeping frequencies across the container.  These vibrations are read by the piezoelectric sensor.</p>
 									</li>
 									<li>
-										<span class="image"><img src="images/amp.PNG" alt="" /></span>
-										<h3>MAX98306 Audio Amplifier</h3>
-										<p>In order to ensure that the transducer's sounds are loud enough to be read by the piezo sensor, our team will use an audio amplifier.</p>
+										<span class="image"><img src="images/lm386.png" alt="" /></span>
+										<h3>LM386 Audio Amplifier Module</h3>
+										<p>While prototyping with the Raspberry pi, our team is using this audio amplifier to ensure that the transducer's sounds are loud enough to be read by the piezo sensor.</p>
 									</li>
 									<li>
 										<span class="image"><img src="images/piezo.jpg" alt="" /></span>
 										<h3>SEN-10293 Piezoelectric sensor</h3>
-										<p>The vibration sensor will be attached to the side of the container, to read back the sounds played by the transducer subsystem.</p>
+										<p>The vibration sensor is attached to the side of the container, to read back the sounds played by the transducer component.</p>
 									</li>
 									<li>
-										<span class="image"><img src="images/wifiModule.jpg" alt=""/></span>									
-
-										<h3>ESP8266 WiFi Module</h3>
-										<p>Our team will use WiFi to transmit data from the mounted system to AFS for data storage and computation.  While many communication technologies would work for this data transmission, WiFi is one of the easiest for our team to use, and will be readily available in many of the use cases of the product.</p>
+										<span class="image"><img src="images/mcp3008.jpg" alt=""/></span>
+										<h3>MCP3008</h3>
+										<p>To convert the analog voltage from the piezoelectric sensor, our team is using the Adafruit MCP3008 ADC.  This ADC has a 10 bit resolution, and can sample at rates up to 200ksps.</p>
+									</li>
+									<li>
+										<span class="image"><img src="images/rpi.jpg" alt=""/></span>
+										<h3>Raspberry Pi 2</h3>
+										<p>Our team is prototyping with a Raspberry Pi 2 as the central control unit for the mounted system.  Using a ready-made Raspberry Pi is saving time and effort on a custom-made PCB, allowing our team to rapidly prototype and develop the computational and sensing components of the system.</p>
+									</li>
+									<li>
+										<span class="image"><img src="images/cc3200launchpad.jpg" alt=""/></span>
+										<h3>CC3200 Launchpad</h3>
+										<p>Our team plans to port over our design from the raspberry pi to this microcontroller.  This microcontroller has a built-in wifi module, which will simplifiy communicating with the mobile application.</p>
+									</li>
+									<li>
+										<span class="image"><img src="images/cc3200audioboost.jpg" alt=""/></span>
+										<h3>CC3200 Audio BoosterPack</h3>
+										<p>When our team switches to the CC3200 Launchpad, we plan to use the CC3200 Audio BoosterPack to amplify the signal going to the transducer.</p>
 									</li>
 									<li>
 										<span class="image"><img src="images/battery.jpg" alt=""/></span>
 										<h3>PRT-13854 Lithium Ion Battery</h3>
-										<p>The battery must last for long periods of time, to minimize the inconvenience of recharging the subsystem.  In particular, the device must be powered for at least a full day at a time.  The battery should be rechargeable, which is why we opted for a lithium ion batter.</p>
+										<p>Our team plans to power the device with a portable battery.  The battery must last for long periods of time, to minimize the inconvenience of recharging the subsystem.  In particular, the device must be powered for at least a full day at a time.  The battery should be rechargeable, which is why we opted for a lithium ion batter.</p>
 									</li>
 									<li>
 										<span class="image"><img src="images/charger.jpg" alt=""/></span>
 										<h3>PRT-10217 Charging Circuit</h3>
-										<p>Our team will use a PRT-10217 charging circuit to recharge the battery of the mounted component.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/rpi.jpg" alt=""/></span>
-										<h3>Raspberry Pi 3</h3>
-										<p>Our team plans to start with a Raspberry Pi 3 as the central control unit for the mounted system.  Using a ready-made Raspberry Pi will save time and effort on a custom-made PCB, allowing our team to rapidly prototype and develop the rest of the system.</p>
+										<p>Our team plans to use a PRT-10217 charging circuit to recharge the battery of the mounted component.</p>
 									</li>
 								</ul>
-								<!--<footer class="major">
-									<ul class="actions">
-										<li><a href="systemDiagram.html" class="button">See How They Go Together</a></li>
-									</ul>
-								</footer>-->
 							</section>
+
+							<!-- <section id="architecture" class="main special">
+								<header class="major">
+									<h2>Architecture</h2>
+									<ul class="features">
+										<li>
+											<span class="image"><img src="images/systemdiagram.png" alt=""/></span>
+											<h3>Planned System Architecture</h3>
+											<p>View our prototyping system architecture <a href="systemDiagram.html">here</a>.</p>
+										</li>
+									</ul>
+								</header>
+							</section> -->
 
 						<!-- Team Members --> 
 							<section id="team-members" class="main special">
